@@ -58,6 +58,6 @@ Delete the source images
 I'm using Cinder to create the data-vis based on the XML file that was created with the above ruby script. It can be found in the [ImageMaker folder](https://github.com/wdlindmeier/PhotoStreamInjector/tree/master/ImageMaker). It generates an image and saves it to an output directory.
 
 ###Import the New Image to iPhoto
-Use the Automator app (ImportOutput.app) to import the image you just created to iPhoto. This will be automatically uploaded to your Photo Stream. (This will need to be modified for your own folder structure.)
+Use the Automator app (ImportOutput.app) to import the image you just created to iPhoto. This will be automatically uploaded to your Photo Stream. This will need to be modified for your own folder structure.
 
 ![Import images to iPhoto](https://raw.github.com/wdlindmeier/PhotoStreamInjector/master/Screenshots/export_to_iphoto_workflow.jpg)
