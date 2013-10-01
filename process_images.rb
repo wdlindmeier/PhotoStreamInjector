@@ -9,6 +9,7 @@ require 'xmlsimple'
 
 $run_path = "/Users/bill/Documents/ITP/AIT-Creative Misuse"
 $images_path = "#{$run_path}/stream"
+$factual_api_key = "YOUR_KEY_HERE";
 $output = []
 
 def get_exif_data(filepath)
@@ -52,7 +53,7 @@ end
 
 def get_demographic_data(lat, lng)  
   begin
-    url = URI::parse(URI::escape("http://api.v3.factual.com/geopulse/context?geo={\"$point\":[#{lat},#{lng}]}&KEY=YOUR_KEY_HERE"))
+    url = URI::parse(URI::escape("http://api.v3.factual.com/geopulse/context?geo={\"$point\":[#{lat},#{lng}]}&KEY=#{$factual_api_key}"))
     response = open(url).string
     return JSON::parse(response)
   rescue Exception => e
